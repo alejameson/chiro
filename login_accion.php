@@ -12,19 +12,18 @@ session_start();
          echo "<script>";
          echo "alert('Bienvenido');";
          echo "</script>";
-         header('location: portfolio.html');
+         header('location: portfolio.php');
          die();
          $_SESSION["email"] = $contenido["login"]["email"];
      }else{
         echo "<script>";
         echo "alert('Usuario invalido');";
-        echo "window.history.go(-1);";
+        /* echo "window.history.go(-1);"; */
+        header('location: portfolio.html');
         echo "</script>";
         die();
      }
  }else{
      echo "No esta en el sistema en este momento";
  }
- 
- /* header('location: http://localhost/Eccomerce_bauti/homepage.html'); */
- ?>
+?>
