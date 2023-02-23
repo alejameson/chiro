@@ -12,14 +12,14 @@ session_start();
          echo "<script>";
          echo "alert('Bienvenido');";
          echo "</script>";
-         header('location: portfolio.php');
+         header('location: panel_control.php');
          die();
          $_SESSION["email"] = $contenido["login"]["email"];
      }else{
         echo "<script>";
         echo "alert('Usuario invalido');";
         /* echo "window.history.go(-1);"; */
-        header('location: portfolio.html');
+        header('location: login.php');
         echo "</script>";
         die();
      }

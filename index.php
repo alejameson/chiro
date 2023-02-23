@@ -9,6 +9,7 @@
     />
     <meta name="description" content="" />
     <meta name="author" content="" />
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <link
       href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
       rel="stylesheet"
@@ -44,11 +45,12 @@ https://templatemo.com/tm-531-reflux
               <h4>Chiro Balmaceda</h4>
               <span>
                 <?php
-                  echo $contenido["session_01_principal"]["item_01"];
+                  echo $contenido["profession"]["item_01"];
                 ?>
               </span>
             </div>
               <?php include("components/nav.php");?> 
+              <a href="login.php"><button style='font-size:15px; margin:15px'>Login <i class='fas fa-user-alt'></i></button></a>
             <div class="social-network">
               <ul class="soial-icons">
                 <li>
@@ -94,14 +96,8 @@ https://templatemo.com/tm-531-reflux
               </div>
               <div class="col-md-6">
                 <div class="right-text">
-                  <h4>Reflux HTML CSS Template</h4>
-                  <p>
-                    Donec tristique feugiat lacus, at sollicitudin nunc euismod
-                    sed. Mauris viverra, erat non sagittis gravida, elit dui
-                    mollis ante, sit amet eleifend purus ligula eget eros. Sed
-                    tincidunt quam vitae neque pharetra dignissim eget ut
-                    libero.
-                  </p>
+                  <h4><?php echo $contenido["session1"]["title1"]; ?></h4>
+                  <p><?php echo $contenido["session1"]["subtitle1"]; ?></p>
                   <div class="white-button">
                     <a href="#">Read More</a>
                   </div>
@@ -113,14 +109,8 @@ https://templatemo.com/tm-531-reflux
             <div class="row">
               <div class="col-md-6">
                 <div class="left-text">
-                  <h4>Sed sagittis rhoncus velit</h4>
-                  <p>
-                    Pellentesque habitant morbi tristique senectus et netus et
-                    malesuada fames ac turpis egestas. Vestibulum fermentum
-                    eleifend nibh, vitae sodales elit finibus pretium.
-                    Suspendisse potenti. Ut sollicitudin risus a sollicitudin
-                    semper.
-                  </p>
+                  <h4><?php echo $contenido["session1"]["title2"]; ?></h4>
+                  <p><?php echo $contenido["session1"]["subtitle2"]; ?></p>
                   <div class="white-button">
                     <a href="#">Read More</a>
                   </div>
